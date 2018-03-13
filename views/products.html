@@ -1,0 +1,19 @@
+﻿<div class="searchbox"><input type="text" class="search" ng-model="search" placeholder="Search Products" /></div>
+<div class="product-align" ng-repeat="product in products | filter: search track by $index">
+    <div>
+        <div class="product-thumb">
+            <img class="product-img" src="{{product.img}}" />
+        </div>
+        <div class="product-content">
+            <h2> {{product.name}} </h2>
+            <h3> {{product.description}}</h3>
+            <h3> {{product.price | currency}} </h3>
+            <h2> Designer : {{product.desginer}}</h2>
+            <h4> Availability : {{product.availability}}</h4>
+            <div class="addProduct modify" ng-show="{{loggedIn}}"><button class="button_slide slide-left" ng-click="removeProd('{{product.id}}')"> Modify </button></div>
+        </div>
+    </div>
+</div>
+<div class="addProduct" ng-show="{{loggedIn}}">
+    <button class="button_slide slide_left" ng-click="addProductLocation('/addproduct')"> Add Product </button>
+</div>

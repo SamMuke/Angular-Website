@@ -1,0 +1,24 @@
+﻿
+<form class="addProductForm" name="addProd" ng-submit="addProduct(addProd.$valid)" novalidate>
+    <div>
+        <div> Enter Product Details </div>
+        <div class="formElem">
+            <label> Product Name </label> <input class="prodClass" type="text" ng-model="newProduct.name" required />
+        </div>
+        <div class="formElem">
+            <label> Product Price </label> <input class="prodClass" type="number" ng-model="newProduct.price" required />
+        </div>
+        <div class="formElem">
+            <label> Product Designer </label> <input class="prodClass" type="text" ng-model="newProduct.designer" required />
+        </div>
+        <div class="formElem">
+            <label> Product Stock </label> <input class="prodClass" type="text" ng-model="newProduct.availability" required />
+        </div>
+        <div class="formElem">
+            <label> Product Description </label> <textarea class="prodClass" ng-model="newProduct.description" rows="4"></textarea>
+        </div>
+        <div class="addSubmitButton">
+            <input class="out-button buttonHigh" type="submit" ng-disabled="addProd.$invalid" />
+        </div>
+    </div>
+</form>

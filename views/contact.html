@@ -1,0 +1,16 @@
+﻿<div id="map_div"></div>
+
+<div class="contact-container">
+    
+    <form class="contactDiv"  name="contForm" ng-submit="submitForm(contForm.$valid)" novalidate>
+        <h2 style=" font-weight: bold;">TALK TO US</h2>
+        <div>
+            <input class="form-group contactForm" type="text" name="name" ng-model="name" placeholder="Enter your Name*" required>
+            <input class="form-group contactForm" type="email" name="email" placeholder="Enter valid email address*" required>
+        </div>
+        <div>
+            <textarea class="form-group contactForm" name="message" rows="4" ng-model="msg" placeholder="Please type your request/feedback" required></textarea>
+        </div>
+        <input class="out-button buttonHigh" type="submit" value="Send Request" ng-disabled="contForm.$invalid" />
+    </form>
+</div>

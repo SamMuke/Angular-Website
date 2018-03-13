@@ -1,0 +1,38 @@
+﻿
+<nav class="navbar navbar-inverse" ng-controller="loginController">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#/">
+                <span style="color:#5bdb48">
+                </span>
+                Handcrafts
+            </a>
+
+        </div>
+        <div class="container-fluid">
+            <a class="navbar-brand highlight" href="#/home">
+                <span class="glyphicon glyphicon-apple" style="color:#5bdb48">
+                </span>
+                Home
+            </a>
+            <a class="navbar-brand highlight" href="#/product">
+                <span class="glyphicon glyphicon-apple" style="color:#5bdb48">
+                </span>
+                Product
+            </a>
+            <a class="navbar-brand highlight" href="#/contact">
+                <span class="glyphicon glyphicon-apple" style="color:#5bdb48">
+                </span>
+                About us
+            </a>
+        </div>
+    </div>
+    <a id="adminNav" style="float:right" class="navbar-brand highlight" href="#/admin">
+        <span class="glyphicon glyphicon-apple" style="color:#5bdb48">
+        </span>
+        Admin
+    </a>
+    <a id="logoutNav" style="float:right;display:none" class="navbar-brand highlight" ng-click="logout()">
+        Logout
+    </a>
+</nav>

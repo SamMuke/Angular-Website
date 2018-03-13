@@ -1,0 +1,27 @@
+﻿[{
+        id: "01",
+        name: "Greeting Card",
+        description: " This is greeting card made with love. Hand made greeting cards are personalized and customized as you wish to your loved ones.",
+        price: 20,
+        availability: " In Stock ",
+        desginer: "Samraj",
+        img: "../../images/products/img1.png"
+    },
+    {
+        id: "01",
+        name: "Greeting Card",
+        description: " This is greeting card made with love. Hand made greeting cards are personalized and customized as you wish to your loved ones.",
+        price: 20,
+        availability: " In Stock ",
+        desginer: "Samraj",
+        img: "../../images/products/img1.png"
+    },
+    {
+        id: "01",
+        name: "Greeting Card",
+        description: " This is greeting card made with love. Hand made greeting cards are personalized and customized as you wish to your loved ones.",
+        price: 20,
+        availability: " In Stock ",
+        desginer: "Samraj",
+        img: "../../images/products/img1.png"
+    }]
